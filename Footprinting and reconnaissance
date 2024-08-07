@@ -1,0 +1,30 @@
+It is the process of identifying and understanding the security risks present in an organization. 
+Like reconnaissance, it involves gathering as much information about the target as possible,including information that may not be readily available online.
+This information can then be used to build a profile of the organization’s security posture and identify potential vulnerabilities.
+
+
+There are two main types of footprinting: passive and active.
+Passive footprinting: Gathering information from publicly available sources such as websites, news articles, and company profiles
+Active footprinting: Using more intrusive methods to access sensitive data, such as hacking into systems or applying social engineering techniques
+
+What Is Reconnaissance?
+
+Footprinting is a part of a larger process known as reconnaissance.
+Reconnaissance is the information-gathering stage of ethical hacking, where you collect data about the target system
+
+Data collected from reconnaissance may include:
+Security policies
+Network infrastructure. 
+Employee contact details
+Host information
+
+#TOOLS
+"theHarvester" - used to gather information of an employee and subdomains of an organisation.
+"sherlock"-used to gather information of a person.
+"shodan"- is one of the search engine specially for cybersecurity.
+"metagoofil"-to get sensitive information from a website.
+#INSTALLATION
+sudo apt install metagoofile
+#USE
+sudo metagoofil -d https://test.com -l5 -n5 -t pdf,doc,xls
+exiftool <file>
