@@ -1,0 +1,45 @@
+What is Scanning?
+
+Scanning is a set of procedures for identifying live hosts, ports, and services, discovering Operating system and architecture of target system, Identifying vulnerabilities and threats in the network.
+Network scanning is used to create a profile of the target organization
+Scanning refers to collecting more information using complex and aggressive reconnaissance techniques.
+
+#TYPES_OF_SCANNING
+Network scanning
+port scanning
+vulnerability scanning
+
+#Network_Scanning
+Network scanning is a process used to identify active devices (hosts), services running on them, and other details about the system and network
+#TOOLS
+"Angry ip scanner"
+"Nmap"
+#USE
+sudo fping is used to show active devices in a network
+route -n
+sudo fping -aqg <ip address/24>
+fping is used to get active ip in a network
+
+#Network_scanning_using_ARP
+Address Resolution Protocol (ARP) is a protocol or procedure that connects an ever-changing Internet Protocol (IP) address to a fixed physical machine address, also known as a media access control (MAC) address, in a local-area network (LAN).
+
+#note
+Devices can block ICMP but they can not block ARP requests
+sudo arping <IP ADDRESS>
+sudo arp-scan <ipaddress/24>
+#Network_scanning_using_netdiscover
+sudo netdiscover -r <ip/24>
+sudo netdiscover -P -i <interface name>
+sudo nmap -Sn <ip>
+
+
+#Port_scanning
+A port scan is a common technique hackers use to discover open doors or weak points in a network.
+A port scan attack helps cyber criminals find open ports and figure out whether they are receiving or sending data.
+
+Port 20 (UDP): File Transfer Protocol (FTP) used for transferring data
+Port 22 (TCP): Secure Shell (SSH) protocol used for FTP, port forwarding, and secure logins
+Port 23 (TCP): The Telnet protocol used for unencrypted communication
+Port 53 (UDP): The Domain Name System (DNS), which translates internet domain names into machine-readable IP addresses
+Port 80 (TCP): The World Wide Web Hypertext Transfer Protocol (HTTP)
+
