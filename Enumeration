@@ -1,0 +1,38 @@
+types of information enumerated by hackers
+ network shares
+ dns details
+ machine names
+ users and groups
+WHAT IS ENUMERATION??
+Enumeration is a data gathering process wherein a cyber attacker extracts information about a network,
+such as host IP addresses,DNS and user names,or sharing and network protocols,
+intending to find weak points and breach the network
+
+DNS Enumeration?/
+DNS enumeration is a critical process in cybersecurity that uncovers all DNS records associated with a domain,
+providing valuable insights for security professionals and cybercriminals alike.
+By detailing hostnames, IP addresses, and DNS record types, it reveals a domain's footprint and potential vulnerabilities.
+
+#tools
+dnsenum
+whois
+Dig
+Smbmap
+Smbclient
+dnsrecon
+
+#usage
+sudo dnsenum --enum <domain>
+whois <domain>
+sudo dnsrecon -d zonetransfer.me  -t axfr/std
+sudo dig axfr @<name server name> <domain>
+sudo nbtScan -r <ip range/24>
+sudo enumlinux -a <ip>
+sudo Smbmap -H <ip> -u(username) -p(password)
+sudo Smbclient  
+
+#to read all the keywords in a website
+sudo cewl -d 1 -m 5 <http://ip> -w password.txt
+
+#to create wordlists being provided details
+sudo cupp -i
